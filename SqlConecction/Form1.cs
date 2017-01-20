@@ -15,5 +15,18 @@ namespace SqlConecction
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Sql sql = new Sql();
+
+           if(sql.Prueba ()) {
+                MessageBox.Show("Conectado...");
+           }
+           else {
+                MessageBox.Show("No se ha conectado...");
+           
+           }
+        }
     }
 }
